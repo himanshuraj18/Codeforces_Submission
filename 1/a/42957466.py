@@ -1,0 +1,10 @@
+n,m,a=map(int,input().split())
+big=n*m
+tile=a**2
+row=n//a
+col=m//a
+if(n%a):
+    row+=1
+if(m%a):
+    col+=1
+print(int(row*col))
